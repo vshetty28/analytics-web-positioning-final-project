@@ -123,3 +123,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+.breadcrumb-list {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumb-link {
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.15s;
+}
+
+.breadcrumb-link:hover {
+  color: #ffffff;
+}
+
+.breadcrumb-current {
+  color: #ffffff;
+}

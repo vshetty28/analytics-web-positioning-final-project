@@ -25,8 +25,8 @@ const articleSchema = {
   description: "Comprehensive guide to the best road trip stops and attractions across America.",
   author: { "@type": "Organization", name: "RestStopsUSA Editorial Team" },
   publisher: { "@type": "Organization", name: "RestStopsUSA" },
-  datePublished: "2024-03-01",
-  dateModified: "2024-12-01",
+  datePublished: "2026-03-01",
+  dateModified: "2026-05-11",
 }
 
 const featuredStops = [
@@ -148,14 +148,18 @@ export default function RoadTripPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <link rel="canonical" href="https://reststopsusa.com/best-road-trip-stops-usa" />
-      
+
       <Header />
-      
+
       <main className="min-h-screen">
+        <div className="bg-background border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+            <Breadcrumbs items={[{ name: "Best Road Trip Stops USA" }]} />
+          </div>
+        </div>
         {/* Hero */}
         <section className="bg-foreground text-background py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <Breadcrumbs items={[{ name: "Best Road Trip Stops USA" }]} />
             <div className="max-w-3xl">
               <p className="text-sm font-medium uppercase tracking-wider text-accent mb-4">
                 Scenic Attractions & Destinations
@@ -164,8 +168,8 @@ export default function RoadTripPage() {
                 Best Road Trip Stops USA
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-background/80">
-                Discover the must-see attractions, scenic overlooks, and unique destinations that 
-                make American road trips unforgettable. From iconic landmarks to hidden gems, 
+                Discover the must-see attractions, scenic overlooks, and unique destinations that
+                make American road trips unforgettable. From iconic landmarks to hidden gems,
                 plan your perfect journey across the nation.
               </p>
             </div>
@@ -241,26 +245,26 @@ export default function RoadTripPage() {
                 Making Your Road Trip Memorable
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                The best road trips aren&apos;t just about the destination—they&apos;re about the journey 
-                and the stops along the way. America&apos;s highways offer countless opportunities for 
-                adventure, from world-famous landmarks to quirky roadside attractions that exist 
+                The best road trips aren&apos;t just about the destination—they&apos;re about the journey
+                and the stops along the way. America&apos;s highways offer countless opportunities for
+                adventure, from world-famous landmarks to quirky roadside attractions that exist
                 nowhere else on Earth.
               </p>
-              
+
               <h3 className="font-serif text-2xl font-bold text-foreground mt-8">
                 Classic American Road Trip Routes
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                <strong>Route 66:</strong> The &quot;Mother Road&quot; from Chicago to Santa Monica features 
-                classic diners, neon signs, and Americana at its finest. Key stops include 
+                <strong>Route 66:</strong> The &quot;Mother Road&quot; from Chicago to Santa Monica features
+                classic diners, neon signs, and Americana at its finest. Key stops include
                 Cadillac Ranch, the Blue Whale of Catoosa, and the Wigwam Motel.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                <strong>Pacific Coast Highway:</strong> Wind along California&apos;s stunning coastline 
+                <strong>Pacific Coast Highway:</strong> Wind along California&apos;s stunning coastline
                 with stops at Big Sur, Hearst Castle, and countless ocean viewpoints.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                <strong>Blue Ridge Parkway:</strong> America&apos;s favorite drive offers 469 miles of 
+                <strong>Blue Ridge Parkway:</strong> America&apos;s favorite drive offers 469 miles of
                 scenic beauty through the Appalachian Highlands with numerous overlooks and hiking trails.
               </p>
 

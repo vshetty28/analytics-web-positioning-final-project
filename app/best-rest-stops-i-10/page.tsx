@@ -19,15 +19,15 @@ export const metadata: Metadata = {
 }
 
 const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Rest Stops on I-10 - Complete Southern Highway Guide",
-  description: "Comprehensive guide to the best rest stops along Interstate 10 from California to Florida.",
-  author: { "@type": "Organization", name: "RestStopsUSA Editorial Team" },
-  publisher: { "@type": "Organization", name: "RestStopsUSA" },
-  datePublished: "2024-02-15",
-  dateModified: "2024-12-01",
-}
+	"@context": "https://schema.org",
+	"@type": "Article",
+	headline: "Best Rest Stops on I-10 - Complete Southern Highway Guide",
+	description: "Comprehensive guide to the best rest stops along Interstate 10 from California to Florida.",
+	author: { "@type": "Organization", name: "RestStopsUSA Editorial Team" },
+	publisher: { "@type": "Organization", name: "RestStopsUSA" },
+	datePublished: "2026-03-01",
+	dateModified: "2026-05-11",
+};
 
 const restStops = [
   {
@@ -55,12 +55,12 @@ const restStops = [
     description: "Full-service welcome center at the New Mexico-Texas border.",
   },
   {
-    name: "Buc-ee&apos;s New Braunfels",
+    name: "Buc-ee's New Braunfels",
     location: "New Braunfels, TX",
     mileMarker: "Near MM 182",
     rating: 4.9,
     amenities: ["fuel", "food", "shopping", "restrooms"],
-    description: "World&apos;s largest convenience store with legendary clean restrooms and BBQ.",
+    description: "World's largest convenience store with legendary clean restrooms and BBQ.",
   },
   {
     name: "Louisiana Welcome Center",
@@ -84,7 +84,7 @@ const stateGuides = [
   { state: "California", highlights: "Desert oasis stops and outlet shopping" },
   { state: "Arizona", highlights: "Desert rest areas with shade structures" },
   { state: "New Mexico", highlights: "Scenic stops with Southwest character" },
-  { state: "Texas", highlights: "Legendary Buc-ee&apos;s and sprawling rest areas" },
+  { state: "Texas", highlights: "Legendary Buc-ee's and sprawling rest areas" },
   { state: "Louisiana", highlights: "Cajun culture welcome centers" },
   { state: "Mississippi", highlights: "Gulf Coast rest facilities" },
   { state: "Alabama", highlights: "Southern hospitality stops" },
@@ -97,8 +97,8 @@ const faqs = [
     answer: "Interstate 10 spans approximately 2,460 miles from Santa Monica, CA to Jacksonville, FL. Driving time is roughly 36-40 hours without stops, but we recommend planning 4-5 days with proper rest stops for a safe and enjoyable journey.",
   },
   {
-    question: "What are the best Buc-ee&apos;s locations on I-10?",
-    answer: "The most notable Buc-ee&apos;s on I-10 include New Braunfels, TX (world&apos;s largest), Luling, TX, and multiple locations across Texas. These mega travel centers offer exceptional facilities, food, and fuel prices.",
+    question: "What are the best Buc-ee's locations on I-10?",
+    answer: "The most notable Buc-ee's on I-10 include New Braunfels, TX (world's largest), Luling, TX, and multiple locations across Texas. These mega travel centers offer exceptional facilities, food, and fuel prices.",
   },
   {
     question: "Are there rest stops in the I-10 desert sections?",
@@ -106,7 +106,7 @@ const faqs = [
   },
   {
     question: "Which I-10 rest stops have truck parking?",
-    answer: "Major truck stops along I-10 include Pilot Flying J, Love&apos;s, and TA/Petro locations throughout Texas, New Mexico, and Arizona. These offer ample truck parking, showers, and 24-hour services.",
+    answer: "Major truck stops along I-10 include Pilot Flying J, Love's, and TA/Petro locations throughout Texas, New Mexico, and Arizona. These offer ample truck parking, showers, and 24-hour services.",
   },
   {
     question: "What should I know about driving I-10 through Texas?",
@@ -138,14 +138,18 @@ export default function I10Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <link rel="canonical" href="https://reststopsusa.com/best-rest-stops-i-10" />
-      
+
       <Header />
-      
+
       <main className="min-h-screen">
+        <div className="bg-background border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+            <Breadcrumbs items={[{ name: "Best Rest Stops on I-10" }]} />
+          </div>
+        </div>
         {/* Hero */}
         <section className="bg-foreground text-background py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <Breadcrumbs items={[{ name: "Best Rest Stops on I-10" }]} />
             <div className="max-w-3xl">
               <p className="text-sm font-medium uppercase tracking-wider text-accent mb-4">
                 Southern Cross-Country Guide
@@ -154,9 +158,9 @@ export default function I10Page() {
                 Best Rest Stops on I-10
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-background/80">
-                Your comprehensive guide to rest areas, service plazas, and travel centers along 
-                Interstate 10 from California to Florida. Spanning 2,460 miles through 8 states 
-                across America&apos;s southern border.
+                Your comprehensive guide to rest areas, service plazas, and travel centers along
+                Interstate 10 from California to Florida. Spanning 2,460 miles through 8 states
+                across America's southern border.
               </p>
               <div className="mt-8 flex flex-wrap gap-4 text-sm text-background/70">
                 <span className="flex items-center gap-2">
@@ -173,7 +177,7 @@ export default function I10Page() {
                 </span>
                 <span className="flex items-center gap-2">
                   <Clock className="h-4 w-4" />
-                  Updated Dec 2024
+                  Updated May 2026
                 </span>
               </div>
             </div>
@@ -249,18 +253,18 @@ export default function I10Page() {
                 Planning Your I-10 Cross-Country Journey
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Interstate 10 offers one of America&apos;s most diverse driving experiences, from the 
-                Pacific beaches of Santa Monica through the Sonoran Desert, across the vast Texas 
-                plains, through the Louisiana bayous, and ending at Florida&apos;s Atlantic coast.
+                Interstate 10 offers one of America's most diverse driving experiences, from the
+                Pacific beaches of Santa Monica through the Sonoran Desert, across the vast Texas
+                plains, through the Louisiana bayous, and ending at Florida's Atlantic coast.
               </p>
-              
+
               <h3 className="font-serif text-2xl font-bold text-foreground mt-8">
                 Desert Driving Safety Tips
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                The I-10 desert sections through Arizona and California require special preparation. 
-                Summer temperatures regularly exceed 110°F (43°C). Always carry at least one gallon 
-                of water per person, check your vehicle&apos;s cooling system before departure, and never 
+                The I-10 desert sections through Arizona and California require special preparation.
+                Summer temperatures regularly exceed 110°F (43°C). Always carry at least one gallon
+                of water per person, check your vehicle's cooling system before departure, and never
                 pass a rest stop with less than a quarter tank of gas.
               </p>
 
@@ -268,9 +272,9 @@ export default function I10Page() {
                 The Texas Experience
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Texas accounts for nearly 900 miles of I-10—more than a third of the total route. 
-                The state features some of America&apos;s best rest stops, including the legendary Buc-ee&apos;s 
-                chain. Don&apos;t miss the opportunity to experience these Texas-sized travel centers with 
+                Texas accounts for nearly 900 miles of I-10—more than a third of the total route.
+                The state features some of America's best rest stops, including the legendary Buc-ee's
+                chain. Don't miss the opportunity to experience these Texas-sized travel centers with
                 their famous brisket, beaver nuggets, and impeccably clean restrooms.
               </p>
 
@@ -280,7 +284,7 @@ export default function I10Page() {
               <ul className="text-muted-foreground space-y-2">
                 <li><strong>Day 1:</strong> Los Angeles to Phoenix (370 mi) - Stop at Quartzsite, AZ</li>
                 <li><strong>Day 2:</strong> Phoenix to El Paso (430 mi) - Multiple rest areas in AZ/NM</li>
-                <li><strong>Day 3:</strong> El Paso to San Antonio (550 mi) - Buc-ee&apos;s in Junction/Kerrville</li>
+                <li><strong>Day 3:</strong> El Paso to San Antonio (550 mi) - Buc-ee's in Junction/Kerrville</li>
                 <li><strong>Day 4:</strong> San Antonio to New Orleans (540 mi) - Louisiana Welcome Center</li>
                 <li><strong>Day 5:</strong> New Orleans to Jacksonville (570 mi) - Gulf Coast rest stops</li>
               </ul>

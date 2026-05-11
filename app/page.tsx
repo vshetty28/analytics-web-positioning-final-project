@@ -29,8 +29,8 @@ const articleSchema = {
 		"@type": "Organization",
 		name: "RestStopsUSA",
 	},
-	datePublished: "2024-01-15",
-	dateModified: "2024-12-01",
+	datePublished: "2026-03-01",
+	dateModified: "2026-05-11",
 };
 
 const features = [

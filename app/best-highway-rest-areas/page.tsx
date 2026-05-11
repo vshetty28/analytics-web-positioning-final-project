@@ -19,15 +19,15 @@ export const metadata: Metadata = {
 }
 
 const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Highway Rest Areas - State-Operated Rest Stops Guide",
-  description: "Comprehensive guide to the best state-operated highway rest areas across America.",
-  author: { "@type": "Organization", name: "RestStopsUSA Editorial Team" },
-  publisher: { "@type": "Organization", name: "RestStopsUSA" },
-  datePublished: "2024-04-01",
-  dateModified: "2024-12-01",
-}
+	"@context": "https://schema.org",
+	"@type": "Article",
+	headline: "Best Highway Rest Areas - State-Operated Rest Stops Guide",
+	description: "Comprehensive guide to the best state-operated highway rest areas across America.",
+	author: { "@type": "Organization", name: "RestStopsUSA Editorial Team" },
+	publisher: { "@type": "Organization", name: "RestStopsUSA" },
+	datePublished: "2026-03-01",
+	dateModified: "2026-05-11",
+};
 
 const topRestAreas = [
   {
@@ -133,14 +133,18 @@ export default function HighwayRestAreasPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <link rel="canonical" href="https://reststopsusa.com/best-highway-rest-areas" />
-      
+
       <Header />
-      
+
       <main className="min-h-screen">
+        <div className="bg-background border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+            <Breadcrumbs items={[{ name: "Best Highway Rest Areas" }]} />
+          </div>
+        </div>
         {/* Hero */}
         <section className="bg-foreground text-background py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <Breadcrumbs items={[{ name: "Best Highway Rest Areas" }]} />
             <div className="max-w-3xl">
               <p className="text-sm font-medium uppercase tracking-wider text-accent mb-4">
                 State-Operated Facilities
@@ -149,7 +153,7 @@ export default function HighwayRestAreasPage() {
                 Best Highway Rest Areas
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-background/80">
-                Your guide to state-operated highway rest areas across America. Free facilities, 
+                Your guide to state-operated highway rest areas across America. Free facilities,
                 scenic stops, and welcome centers providing essential services for safe travels.
               </p>
               <div className="mt-8 flex flex-wrap gap-4 text-sm text-background/70">
@@ -252,26 +256,26 @@ export default function HighwayRestAreasPage() {
                 Understanding Highway Rest Areas
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Highway rest areas serve a critical safety function, providing free facilities 
-                where travelers can take breaks from driving. The Federal Highway Administration 
+                Highway rest areas serve a critical safety function, providing free facilities
+                where travelers can take breaks from driving. The Federal Highway Administration
                 recommends rest stops every 50-100 miles on interstate highways.
               </p>
-              
+
               <h3 className="font-serif text-2xl font-bold text-foreground mt-8">
                 Types of State Rest Facilities
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                <strong>Welcome Centers:</strong> Located at state borders, these staffed facilities 
-                offer tourism information, maps, and often sample local products. Many have WiFi 
+                <strong>Welcome Centers:</strong> Located at state borders, these staffed facilities
+                offer tourism information, maps, and often sample local products. Many have WiFi
                 and extended hours.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                <strong>Safety Rest Areas:</strong> Basic facilities with restrooms, parking, and 
-                picnic tables designed for driver rest breaks. Usually unstaffed but regularly 
+                <strong>Safety Rest Areas:</strong> Basic facilities with restrooms, parking, and
+                picnic tables designed for driver rest breaks. Usually unstaffed but regularly
                 maintained.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                <strong>Scenic Overlooks:</strong> Smaller pull-offs at scenic locations, typically 
+                <strong>Scenic Overlooks:</strong> Smaller pull-offs at scenic locations, typically
                 offering parking and viewpoints but limited facilities.
               </p>
 

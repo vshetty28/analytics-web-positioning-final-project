@@ -19,15 +19,15 @@ export const metadata: Metadata = {
 }
 
 const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Rest Stops on I-95 - Complete East Coast Highway Guide",
-  description: "Comprehensive guide to the best rest stops along Interstate 95 from Maine to Florida.",
-  author: { "@type": "Organization", name: "RestStopsUSA Editorial Team" },
-  publisher: { "@type": "Organization", name: "RestStopsUSA" },
-  datePublished: "2024-02-01",
-  dateModified: "2024-12-01",
-}
+	"@context": "https://schema.org",
+	"@type": "Article",
+	headline: "Best Rest Stops on I-95 - Complete East Coast Highway Guide",
+	description: "Comprehensive guide to the best rest stops along Interstate 95 from Maine to Florida.",
+	author: { "@type": "Organization", name: "RestStopsUSA Editorial Team" },
+	publisher: { "@type": "Organization", name: "RestStopsUSA" },
+	datePublished: "2026-03-01",
+	dateModified: "2026-05-11",
+};
 
 const restStops = [
   {
@@ -144,14 +144,18 @@ export default function I95Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <link rel="canonical" href="https://reststopsusa.com/best-rest-stops-i-95" />
-      
+
       <Header />
-      
+
       <main className="min-h-screen">
+        <div className="bg-background border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+            <Breadcrumbs items={[{ name: "Best Rest Stops on I-95" }]} />
+          </div>
+        </div>
         {/* Hero */}
         <section className="bg-foreground text-background py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <Breadcrumbs items={[{ name: "Best Rest Stops on I-95" }]} />
             <div className="max-w-3xl">
               <p className="text-sm font-medium uppercase tracking-wider text-accent mb-4">
                 East Coast Corridor Guide
@@ -160,8 +164,8 @@ export default function I95Page() {
                 Best Rest Stops on I-95
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-background/80">
-                Your comprehensive guide to rest areas, service plazas, and travel centers along 
-                Interstate 95 from Maine to Florida. Covering 1,920 miles through 15 states on 
+                Your comprehensive guide to rest areas, service plazas, and travel centers along
+                Interstate 95 from Maine to Florida. Covering 1,920 miles through 15 states on
                 America&apos;s busiest highway corridor.
               </p>
               <div className="mt-8 flex flex-wrap gap-4 text-sm text-background/70">
@@ -175,7 +179,7 @@ export default function I95Page() {
                 </span>
                 <span className="flex items-center gap-2">
                   <Clock className="h-4 w-4" />
-                  Updated Dec 2024
+                  Updated May 2026
                 </span>
               </div>
             </div>
@@ -251,26 +255,26 @@ export default function I95Page() {
                 Planning Your I-95 Journey
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Interstate 95 is the main north-south highway along the Eastern Seaboard, connecting 
-                major cities from Boston to Miami. With over 1,900 miles of road, planning your rest 
+                Interstate 95 is the main north-south highway along the Eastern Seaboard, connecting
+                major cities from Boston to Miami. With over 1,900 miles of road, planning your rest
                 stops is essential for a safe and comfortable journey.
               </p>
-              
+
               <h3 className="font-serif text-2xl font-bold text-foreground mt-8">
                 Rest Stop Frequency by Region
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                <strong>Northeast (ME-NJ):</strong> Service plazas every 20-40 miles on toll roads, 
-                with extensive food and fuel options. The New Jersey Turnpike features some of the 
+                <strong>Northeast (ME-NJ):</strong> Service plazas every 20-40 miles on toll roads,
+                with extensive food and fuel options. The New Jersey Turnpike features some of the
                 largest service areas on the East Coast.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                <strong>Mid-Atlantic (DE-VA):</strong> State rest areas every 50-60 miles with 
-                basic amenities. The Maryland House and Chesapeake House are notable exceptions 
+                <strong>Mid-Atlantic (DE-VA):</strong> State rest areas every 50-60 miles with
+                basic amenities. The Maryland House and Chesapeake House are notable exceptions
                 with full-service facilities.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                <strong>Southeast (NC-FL):</strong> Welcome centers at state borders with rest 
+                <strong>Southeast (NC-FL):</strong> Welcome centers at state borders with rest
                 areas spaced every 40-70 miles. Commercial truck stops fill gaps between state facilities.
               </p>
 

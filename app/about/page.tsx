@@ -25,10 +25,10 @@ const organizationSchema = {
 	name: "RestStopsUSA",
 	url: "https://reststopsusa.com",
 	description: "America's most comprehensive guide to highway rest stops and travel centers",
-	foundingDate: "2019",
+	foundingDate: "2026",
 	founder: {
 		"@type": "Person",
-		name: "Michael Torres",
+		name: "Vihaan Shetty",
 	},
 	address: {
 		"@type": "PostalAddress",
@@ -125,10 +125,14 @@ export default function AboutPage() {
 			<Header />
 
 			<main className="min-h-screen">
+				<div className="bg-background border-b border-border">
+					<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+						<Breadcrumbs items={[{ name: "About Us" }]} />
+					</div>
+				</div>
 				{/* Hero */}
 				<section className="bg-foreground text-background py-16 lg:py-20">
 					<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-						<Breadcrumbs items={[{ name: "About Us" }]} />
 						<div className="max-w-3xl">
 							<h1 className="font-serif text-4xl font-bold tracking-tight sm:text-5xl">About RestStopsUSA</h1>
 							<p className="mt-6 text-lg leading-relaxed text-background/80">We are a team of transportation experts, travel journalists, and road trip enthusiasts dedicated to helping Americans travel safely and comfortably. Our mission is to be the most trusted resource for highway rest stop information.</p>

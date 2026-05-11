@@ -19,24 +19,24 @@ export const metadata: Metadata = {
 }
 
 const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Travel Centers America - Full-Service Highway Plazas",
-  description: "Comprehensive guide to the best travel centers and truck stops across America.",
-  author: { "@type": "Organization", name: "RestStopsUSA Editorial Team" },
-  publisher: { "@type": "Organization", name: "RestStopsUSA" },
-  datePublished: "2024-03-15",
-  dateModified: "2024-12-01",
-}
+	"@context": "https://schema.org",
+	"@type": "Article",
+	headline: "Best Travel Centers America - Full-Service Highway Plazas",
+	description: "Comprehensive guide to the best travel centers and truck stops across America.",
+	author: { "@type": "Organization", name: "RestStopsUSA Editorial Team" },
+	publisher: { "@type": "Organization", name: "RestStopsUSA" },
+	datePublished: "2026-03-01",
+	dateModified: "2026-05-11",
+};
 
 const travelCenterChains = [
   {
-    name: "Buc-ee&apos;s",
+    name: "Buc-ee's",
     locations: "50+ locations",
     rating: 4.9,
     specialty: "Massive stores, famous restrooms, Texas BBQ",
     amenities: ["fuel", "food", "shopping", "restrooms"],
-    description: "Texas-based chain known for the cleanest restrooms in America and world&apos;s largest convenience stores.",
+    description: "Texas-based chain known for the cleanest restrooms in America and world's largest convenience stores.",
   },
   {
     name: "Pilot Flying J",
@@ -44,13 +44,13 @@ const travelCenterChains = [
     rating: 4.3,
     specialty: "Largest truck stop chain, comprehensive services",
     amenities: ["fuel", "food", "showers", "wifi", "parking"],
-    description: "America&apos;s largest travel center network with extensive trucker amenities and loyalty programs.",
+    description: "America's largest travel center network with extensive trucker amenities and loyalty programs.",
   },
   {
-    name: "Love&apos;s Travel Stops",
+    name: "Love's Travel Stops",
     locations: "600+ locations",
     rating: 4.4,
-    specialty: "Family-friendly, Godfather&apos;s Pizza",
+    specialty: "Family-friendly, Godfather's Pizza",
     amenities: ["fuel", "food", "showers", "wifi"],
     description: "Family-owned chain known for clean facilities and consistent service nationwide.",
   },
@@ -92,11 +92,11 @@ const amenityGuide = [
 const faqs = [
   {
     question: "What is the difference between a travel center and a truck stop?",
-    answer: "While the terms are often used interchangeably, travel centers typically offer more amenities for all travelers including families, while truck stops focus primarily on commercial driver needs. Modern travel centers like Buc-ee&apos;s cater to everyone with extensive food options and shopping.",
+    answer: "While the terms are often used interchangeably, travel centers typically offer more amenities for all travelers including families, while truck stops focus primarily on commercial driver needs. Modern travel centers like Buc-ee's cater to everyone with extensive food options and shopping.",
   },
   {
     question: "Which travel center chain has the cleanest restrooms?",
-    answer: "Buc-ee&apos;s is consistently rated as having the cleanest restrooms in America, with full-time attendants maintaining facilities around the clock. QuikTrip and Wawa are also known for exceptionally clean facilities.",
+    answer: "Buc-ee's is consistently rated as having the cleanest restrooms in America, with full-time attendants maintaining facilities around the clock. QuikTrip and Wawa are also known for exceptionally clean facilities.",
   },
   {
     question: "Can non-truckers use truck stop showers?",
@@ -108,11 +108,11 @@ const faqs = [
   },
   {
     question: "Which travel center has the best food?",
-    answer: "Buc-ee&apos;s is famous for their Texas BBQ brisket and fresh fudge. Wawa offers excellent made-to-order hoagies. TA/Petro locations feature full-service restaurants. Many Love&apos;s have Godfather&apos;s Pizza.",
+    answer: "Buc-ee's is famous for their Texas BBQ brisket and fresh fudge. Wawa offers excellent made-to-order hoagies. TA/Petro locations feature full-service restaurants. Many Love's have Godfather's Pizza.",
   },
   {
     question: "How do travel center loyalty programs work?",
-    answer: "Major chains like Pilot Flying J (myRewards Plus), Love&apos;s (My Love Rewards), and TA/Petro (UltraOne) offer points for fuel and purchases. Points can be redeemed for free showers, food, merchandise, and fuel discounts.",
+    answer: "Major chains like Pilot Flying J (myRewards Plus), Love's (My Love Rewards), and TA/Petro (UltraOne) offer points for fuel and purchases. Points can be redeemed for free showers, food, merchandise, and fuel discounts.",
   },
 ]
 
@@ -124,14 +124,18 @@ export default function TravelCentersPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <link rel="canonical" href="https://reststopsusa.com/best-travel-centers-america" />
-      
+
       <Header />
-      
+
       <main className="min-h-screen">
+        <div className="bg-background border-b border-border">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+            <Breadcrumbs items={[{ name: "Best Travel Centers America" }]} />
+          </div>
+        </div>
         {/* Hero */}
         <section className="bg-foreground text-background py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <Breadcrumbs items={[{ name: "Best Travel Centers America" }]} />
             <div className="max-w-3xl">
               <p className="text-sm font-medium uppercase tracking-wider text-accent mb-4">
                 Full-Service Highway Plazas
@@ -140,8 +144,8 @@ export default function TravelCentersPage() {
                 Best Travel Centers America
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-background/80">
-                Your complete guide to America&apos;s best travel centers and truck stops. Find 
-                full-service facilities with fuel, food, showers, and everything you need 
+                Your complete guide to America&apos;s best travel centers and truck stops. Find
+                full-service facilities with fuel, food, showers, and everything you need
                 for a comfortable journey.
               </p>
             </div>
@@ -210,18 +214,18 @@ export default function TravelCentersPage() {
                 Choosing the Right Travel Center
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Today&apos;s travel centers offer far more than just fuel. Whether you&apos;re a long-haul 
-                trucker needing a hot shower, a family on vacation looking for a meal, or a business 
+                Today&apos;s travel centers offer far more than just fuel. Whether you&apos;re a long-haul
+                trucker needing a hot shower, a family on vacation looking for a meal, or a business
                 traveler needing WiFi, there&apos;s a travel center designed for your needs.
               </p>
-              
+
               <h3 className="font-serif text-2xl font-bold text-foreground mt-8">
                 For Commercial Drivers
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Pilot Flying J and TA/Petro lead the industry for professional drivers with 
-                dedicated truck parking, DEF at the pump, CAT scales, and comprehensive 
-                maintenance services. Their loyalty programs offer significant savings on 
+                Pilot Flying J and TA/Petro lead the industry for professional drivers with
+                dedicated truck parking, DEF at the pump, CAT scales, and comprehensive
+                maintenance services. Their loyalty programs offer significant savings on
                 fuel and amenities.
               </p>
 
@@ -229,9 +233,9 @@ export default function TravelCentersPage() {
                 For Families
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Buc-ee&apos;s and Love&apos;s excel at family-friendly travel. Clean restrooms, diverse 
-                food options, and unique shopping experiences make these stops destinations 
-                rather than just pit stops. Kids especially love Buc-ee&apos;s beaver mascot 
+                Buc-ee&apos;s and Love&apos;s excel at family-friendly travel. Clean restrooms, diverse
+                food options, and unique shopping experiences make these stops destinations
+                rather than just pit stops. Kids especially love Buc-ee&apos;s beaver mascot
                 merchandise.
               </p>
 
